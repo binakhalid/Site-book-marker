@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <title>Site Bookmarker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+   
+  </head>
+
+  <body onload="fetchBookmarks()">
+
+    <div class="container">
+      <header class="header clearfix">
+        <nav>
+         
+        </nav>
+        <h3 class="text-muted">Bookmarker</h3>
+      </header>
+
+      <main role="main">
+
+        <div class="jumbotron">
+          <h2>Bookmark you favourite sites</h2>
+         <form id="myForm">
+          <div class="form-group">
+            <label>Site Name</label>
+            <input type="text" class="form-control" id="siteName" placeholder="Enter Site Name">
+
+            <div class="form-group">
+              <label>Site URL</label>
+              <input type="text" class="form-control" id="siteUrl" placeholder="Enter Site URL">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+
+         </form>
+        </div>
+
+        <div class="row marketing">
+          <div class="col-lg-12">
+           <div id="bookmarksResult"></div>
+          </div>
+
+          
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        <p>&copy; Binaka Bookmarker 2017</p>
+      </footer>
+
+    </div> <!-- /container -->
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
